@@ -61,6 +61,8 @@ class TriangleSquare extends UserAction{
     private final Scanner scanner;
 
     public TriangleSquare(Scanner scanner){this.scanner = scanner;}
+
+    @Override
     public void doAction(){
         System.out.println("Введіть 1-ший катет трикутника: ");
         int cat1 = scanner.nextInt();
@@ -71,5 +73,6 @@ class TriangleSquare extends UserAction{
         System.out.println("Площа трикутника дорівнює = " + square);
     }
 
+    @Override
     public String getName(){return "порахувати площу трикутника";}
 }
