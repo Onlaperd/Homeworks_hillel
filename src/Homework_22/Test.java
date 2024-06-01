@@ -19,6 +19,10 @@ public class Test {
         System.out.println(singleWayList.getFirst());
         System.out.println(singleWayList.getLast());
         System.out.println(singleWayList.getSize());
+
+        System.out.println("---");
+
+        singleWayList.addFirst(30);
         singleWayList.setValue(1 ,100);
 
         singleWayList.printList();

@@ -45,7 +45,7 @@ public class SingleWayOneList<T> implements Iterable<T> {
     }
 
     public void addFirst(T data){
-        Node<T> newNode = new Node<T>(data);
+        Node<T> newNode = new Node<>(data);
         newNode.next = head;
         newNode.prev = null;
         head = newNode;
@@ -53,7 +53,7 @@ public class SingleWayOneList<T> implements Iterable<T> {
     }
 
     public void add(T data){
-        Node<T> newNode = new Node<T>(data);
+        Node<T> newNode = new Node<>(data);
         if (head == null){
             head = newNode;
             tail = newNode;
@@ -79,9 +79,6 @@ public class SingleWayOneList<T> implements Iterable<T> {
     }
 
     public void removeLast(){
-
-        Node<T> current = head;
-
         if (tail == head){
             head = null;
             tail = null;
