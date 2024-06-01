@@ -48,6 +48,8 @@ public class SingleWayOneList<T> implements Iterable<T> {
         Node<T> newNode = new Node<>(data);
         newNode.next = head;
         newNode.prev = null;
+
+        if (tail == null) { tail = newNode;}
         head = newNode;
         size++;
     }
